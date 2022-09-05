@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+}
+* {
+  font-family: 'Poppins';
+}
+.header {
+  height: 119px;
+  padding: 0 113px 0 103px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  flex-basis: 160px;
+  flex-grow: 1;
+}
+.logo > div {
+  display: flex;
+  justify-content: space-between;
+  width: 128px;
+  font-size: 28px;
+}
+.logo > div > span {
+  line-height: 52px;
+  font-family: 'ExtraBoldPoppins';
+  color: #58A9A5;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  width: 655px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 0;
+}
+.nav li a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: #404242;
+}
+.nav li.active a {
+  font-family: 'BoldPoppins';
+  color: #58A9A5;
+}
+.nav li.active {
+  position: relative;
+}
+.border-line {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+.active .border-line {
+  display: block;
+}
+.border-line > div {
+  margin: 0 auto;
+  border-radius: 21px;
+  background: #FEC62D;
+  width: 48px;
+  height: 6px;
+}
+.pages {
+  position: relative;
+  height: 18px;
+  border-radius: 9px;
+  background: #1476FF;
+  width: 18px;
+  font-size: 10px;
+  color: #fff;
+  padding: 3px 0 3px 0;
+  box-sizing: border-box;
+  line-height: 11.1px;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'Inter Regular';
+}
+.browse-screens {
+  width: 160px;
+  height: 52px;
+  border-radius: 48px;
+  border: 1px solid #E9EAF3;
+  text-align: center;
+  padding: 16px 0 18px 0;
+  box-sizing: border-box;
+  line-height: 16px;
+  font-weight: 700;
+  box-shadow: 0px 4px 10px rgba(20, 20, 43, 0.04);
+  color: #0B0E2C;
+}
+aside {
+  flex-grow: 0.71197;
+  flex-basis: 271px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+aside .signup {
+  background: #58A9A5;
+  width: 216px;
+  height: 80px;
+  font-size: 20px;
+  box-shadow: 0px 4px 10px rgba(2, 87, 251, 0.2);
+  box-sizing: border-box;
+  padding: 21px 0;
+  color: #fff;
+  text-align: center;
+  line-height: 38px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+.pages-value {
+  margin: 0 41px 0 32px;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(fonts/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: 'BoldPoppins';
+  src: url(fonts/poppins/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: 'ExtraBoldPoppins';
+  src: url(fonts/poppins/Poppins-ExtraBold.ttf);
+}
