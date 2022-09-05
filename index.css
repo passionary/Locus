@@ -4,9 +4,68 @@ body {
 * {
   font-family: 'Poppins';
 }
+p, li {
+  color: #404242;
+}
+h1 {
+  color: #1C2323;
+}
+.wrapper {
+  padding: 0 85px 334px 103px;
+}
+main {
+  padding-top: 105px;
+}
+.description {
+  padding-bottom: 120px;
+}
+.description-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.description-content {
+  flex: 1 1 0;
+  padding-right: 57px;
+}
+.description-content * {
+  margin-bottom: 50px;
+}
+.description-content h1 {
+  font-family: 'ExtraBoldPoppins';
+  line-height: 84px;
+  font-size: 56px;
+}
+.description-content p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+.description-content button {
+  width: 216px;
+  height: 80px;
+  background: #58A9A5;
+  border-radius: 20px 20px 20px 0px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'BoldPoppins';
+  cursor: pointer;
+}
+.description-image {
+  flex: 1 1 58px;
+  height: 625px;
+}
+.description-image::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url(assets/rect.svg) no-repeat;
+  background-size: 100% 100%;
+}
 .header {
   height: 119px;
-  padding: 0 113px 0 103px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,11 +159,11 @@ aside {
   justify-content: flex-end;
 }
 aside .signup {
+  cursor: pointer;
   background: #58A9A5;
   width: 216px;
   height: 80px;
   font-size: 20px;
-  box-shadow: 0px 4px 10px rgba(2, 87, 251, 0.2);
   box-sizing: border-box;
   padding: 21px 0;
   color: #fff;
@@ -116,6 +175,98 @@ aside .signup {
 .pages-value {
   margin: 0 41px 0 32px;
 }
+.how-it-works h1 {
+  text-align: center;
+  font-family: 'ExtraBoldPoppins';
+  font-size: 56px;
+  line-height: 84px;
+  margin-bottom: 20px;
+}
+.how-it-works > p {
+  text-align: center;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 71px;
+}
+.how-it-works-wrapper {
+  display: flex;
+  height: 350px;
+  margin-bottom: 150px;
+}
+.how-it-works-wrapper p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #486958;
+}
+.how-it-works-wrapper h3 {
+  white-space: nowrap;
+  color: #486958;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'BoldPoppins';
+}
+.how-it-works-mission-wrapper {
+  display: flex;
+  height: 520px;
+}
+.how-it-works-image {
+  background: url(assets/how-it-works-content.svg) no-repeat;
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+  flex: 1 1 684px;
+}
+.how-it-works-content {
+  position: relative;
+  flex: 1;
+  padding: 56px 85px 71px 92px;
+  background: #CCF0E6;
+  text-align: left;
+}
+.how-it-works-content p {
+  text-align: left;
+}
+.how-it-works-content .background {
+  width: 102px;
+  height: 102px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 52px;
+  position: absolute;
+  bottom: 40px;
+  left: -51px;
+}
+.how-it-works-content .forground {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 52px;
+  position: absolute;
+  bottom: 51px;
+  left: -40px;
+}
+.how-it-works-content .forground svg {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 32px;
+}
+.how-it-works-mission-image {
+  background: url(assets/how-it-works-mission-content.svg) no-repeat;
+  background-size: 100% 100%;
+  flex: 1;
+}
+.how-it-works-mission-content {
+  flex: 1 1 0;
+  padding: 0 96px 0 71px;
+}
+.how-it-works-mission-content h2 {
+  font-family: 'BoldPoppins';
+}
+.how-it-works-mission-content p {
+  text-align: left;
+}
+
 @font-face {
   font-family: 'Poppins';
   src: url(fonts/poppins/Poppins-Regular.ttf);
