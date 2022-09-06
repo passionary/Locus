@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="index.css">
+  <script>
+    function openMenu() {
+      console.log('open');
+      document.querySelector('.menu').classList.add('open');
+    } 
+    function closeMenu() {
+      console.log('close');
+      document.querySelector('.menu').classList.remove('open');
+    }
+  </script>
 </head>
 <body>
   <div class="wrapper">
@@ -50,6 +60,19 @@
       <aside>
         <div class="signup">Sign Up</div>
       </aside>
+      <div onclick="openMenu()" class="mobile-menu"></div>
+      <div class="menu">
+        <div onclick="closeMenu()" class="close-menu">&times;</div>
+        <div class="list">
+          <a href="/">Home</a>
+          <a href="/">Contact</a>
+          <a href="/">Location</a>
+          <a href="/">About Us</a>
+        </div>
+        <div class="menu-signup">
+          <div>Sign Up</div>
+        </div>
+      </div>
     </div>
     <main>
       <div class="description">
@@ -120,6 +143,93 @@
               to maximise the space that we occupy in 
               our homes.
             </p>
+          </div>
+        </div>
+      </div>
+      <div class="our-project">
+        <h1>
+          Our project
+        </h1>
+        <p>
+          Introducing our first official project
+        </p>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="our-project-content">
+          <div class="project-livingroom">
+            <h3>
+              Project Livingroom
+            </h3>
+            <p>
+              A simple guide to create the perfect livingro-
+              om for . Night Watc works beautifully in a wi-
+              de gamut of arrangements.
+            </p>
+            <div class="project-livingroom-image"></div>
+          </div>
+          <div class="project-workspace">
+            <div class="project-workspace-image"></div>
+            <h3>
+              Project workspace
+            </h3>
+            <p>
+              A simple guide to create the perfect livingro-
+              om for . Night Watc works beautifully in a wi-
+              de gamut of arrangements.
+            </p>
+          </div>
+          <div class="library">
+            <h3>
+              Library
+            </h3>
+            <p>
+              A simple guide to create the perfect livingro-
+              om for . Night Watc works beautifully in a wi-
+              de gamut of arrangements.
+            </p>
+            <div class="library-image"></div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials">
+        <h1>
+          Testimonial
+        </h1>
+        <div class="testimonials-examples">
+          <div class="testimonials-examples-item klamby"></div>
+          <div class="testimonials-examples-item mayoutfit"></div>
+          <div class="testimonials-examples-item zalora"></div>
+          <div class="testimonials-examples-item geulis"></div>
+        </div>
+        <div class="testimonials-content">
+          <div class="testimonials-content-image"></div>
+          <div class="testimonials-right-content">
+            <div class="testimonials-right-content-top-text">
+              <p>
+                <span>105</span><br>
+                project done
+              </p>
+              <p>
+                <span>12</span><br>
+                years of experience
+              </p>
+              <p>
+                <span>10+</span><br>
+                big company partnership
+              </p>
+            </div>
+            <div class="testimonials-right-content-middle-text">
+              <div class="quotes"></div>
+              <p class="testimonials-right-content-middle-text-description">
+                "Not able to tell you how happy I am with interior design. 
+                Interior design has completely surpassed our expectations. 
+                Interior design saved my business. Interior design is worth 
+                much more than I paid."
+              </p>
+              <p class="roscoe">
+                - <span>Roscoe</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>

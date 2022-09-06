@@ -71,8 +71,7 @@ main {
   align-items: center;
 }
 .logo {
-  flex-basis: 160px;
-  flex-grow: 1;
+  flex: 1;
 }
 .logo > div {
   display: flex;
@@ -87,9 +86,9 @@ main {
 }
 .nav {
   display: flex;
+  flex: 1.25;
   align-items: center;
   font-size: 14px;
-  width: 655px;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -152,8 +151,7 @@ main {
   color: #0B0E2C;
 }
 aside {
-  flex-grow: 0.71197;
-  flex-basis: 271px;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -253,7 +251,7 @@ aside .signup {
 }
 .how-it-works-mission-image {
   background: url(assets/how-it-works-mission-content.svg) no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   flex: 1;
 }
 .how-it-works-mission-content {
@@ -262,9 +260,269 @@ aside .signup {
 }
 .how-it-works-mission-content h2 {
   font-family: 'BoldPoppins';
+  font-size: 32px;
 }
 .how-it-works-mission-content p {
   text-align: left;
+  font-size: 24px;
+}
+.menu {
+  z-index: 1;
+  position: fixed;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: min(80vw, 480px);
+  height: 184vh;
+  transition: transform 500ms ease 0s;
+  transform: translateX(100%);
+  overflow-y: scroll;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-left: 1px solid #58A9A5;
+}
+.menu-signup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+.close-menu {
+  cursor: pointer;
+  font-size: 40px;
+  color: #404242;
+  padding: 0 0 0 17px;
+}
+.menu-signup > div {
+  cursor: pointer;
+  background: #58A9A5;
+  width: 216px;
+  height: 80px;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 21px 0;
+  color: #fff;
+  text-align: center;
+  line-height: 38px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list a {
+  border-bottom: 1px solid;
+  font-size: 21px;
+  text-decoration: none;
+  color: #404242;
+}
+.list a + a {
+  margin-top: 60px;
+}
+.open {
+  transform: translateX(0%);
+}
+.mobile-menu {
+  cursor: pointer;
+  position: relative;
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: url(assets/menu.png) no-repeat;
+  background-size: cover;
+}
+.our-project {
+  padding-top: 120px;
+}
+.our-project h1, p {
+  text-align: center;
+}
+.our-project > h1 {
+  font-size: 56px;
+  font-family: 'ExtraBoldPoppins';
+  line-height: 84px;
+}
+.our-project > p {
+  margin-bottom: 51px;
+  font-size: 24px;
+  line-height: 36px;
+}
+.line {
+  width: 135px;
+  height: 5px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background: #58A9A5;
+}
+.our-project-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
+}
+.our-project-content > div {
+  max-width: 360px;
+}
+.our-project-content p {
+  text-align: left;
+  margin-bottom: 35px;
+}
+.our-project-content h3 {
+  color: #58A9A5;
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+.project-livingroom-image {
+  border-radius: 0px 0px 180px 180px;
+  width: 360px;
+  height: 360px;
+  background: url(assets/livingroom.svg) no-repeat;
+  background-size: cover;
+}
+.project-workspace-image {
+  width: 360px;
+  height: 360px;
+  border-radius: 180px;
+  background: url(assets/workspace.svg) no-repeat;
+  background-size: cover;
+}
+.project-workspace h3 {
+  margin-top: 35px;
+}
+.library-image {
+  width: 360px;
+  height: 360px;
+  border-radius: 0px 0px 180px 180px;
+  background: url(assets/library.svg) no-repeat;
+  background-size: cover;
+}
+.testimonials h1 {
+  text-align: center;
+  font-size: 56px;
+  font-family: 'ExtraBoldPoppins';
+  line-height: 84px;
+}
+.testimonials-examples {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials-content {
+  padding-top: 62px;
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials-content-image {
+  width: 492px;
+  height: 560px;
+  background: url(assets/testimonial-content-image.svg) no-repeat;
+  background-size: cover;
+}
+.testimonials-right-content {
+  padding: 40px 85px 76px 109px;
+  background: #CCF0E6;
+  flex: 1;
+}
+.testimonials-right-content-top-text {
+  display: flex;
+}
+.testimonials-right-content-top-text span {
+  color: #58A9A5;
+  font-size: 56px;
+  font-family: 'ExtraBoldPoppins';
+  line-height: 84px;
+}
+.testimonials-right-content-top-text p {
+  font-size: 24px;
+  color: #58A9A5;
+  line-height: 36px;
+  font-weight: 600;
+}
+.testimonials-right-content-top-text p + p {
+  margin-left: 93px;
+}
+.testimonials-right-content-middle-text {
+  margin-top: 98px;
+  position: relative;
+}
+.testimonials-right-content-middle-text p {
+  position: relative;
+}
+.testimonials-right-content-middle-text-description {
+
+}
+.roscoe {
+  font-size: 20px;
+  color: #58A9A5;
+  line-height: 30.4px;
+}
+.roscoe span {
+  font-style: italic;
+}
+.quotes {
+  z-index: 0;
+  position: absolute;
+  left: -21px;
+  top: -63px;
+  width: 58px;
+  height: 107px;
+  background: url(assets/quotes.svg) no-repeat;
+  background-size: 100% 100%;
+}
+.testimonials-right-content * {
+  text-align: left;
+}
+.testimonials-examples-item {
+  background-size: cover !important;
+}
+.klamby {
+  width: 191px;
+  height: 191px;
+  background: url(assets/klamby.svg) no-repeat;
+  background-position: top;
+}
+.mayoutfit {
+  width: 191px;
+  height: 72px;
+  background: url(assets/mayoutfit.svg) no-repeat;
+}
+.zalora {
+  width: 237px;
+  height: 35px;
+  background: url(assets/zalora.svg) no-repeat;
+}
+.geulis {
+  width: 160px;
+  height: 104px;
+  background: url(assets/geulis.svg) no-repeat;
+}
+@media screen and (max-width: 1300px) {
+  .nav {
+    font-size: 18px;
+  }
+  aside .signup {
+    width: 160px;
+    font-size: 18px;
+  }
+  .logo {
+    flex: 0.8;
+  }
+  aside {
+    flex: 0.8;
+  }
+}
+@media screen and (max-width: 1275px) {
+  .nav {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
 }
 
 @font-face {
