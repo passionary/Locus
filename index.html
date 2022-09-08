@@ -18,6 +18,18 @@
   </script>
 </head>
 <body>
+  <div class="menu">
+    <div onclick="closeMenu()" class="close-menu">&times;</div>
+    <div class="list">
+      <a href="/">Home</a>
+      <a href="/">Contact</a>
+      <a href="/">Location</a>
+      <a href="/">About Us</a>
+    </div>
+    <div class="menu-signup">
+      <div>Sign Up</div>
+    </div>
+  </div>
   <div class="wrapper">
     <div class="header">
       <div class="logo">
@@ -61,18 +73,6 @@
         <div class="signup">Sign Up</div>
       </aside>
       <div onclick="openMenu()" class="mobile-menu"></div>
-      <div class="menu">
-        <div onclick="closeMenu()" class="close-menu">&times;</div>
-        <div class="list">
-          <a href="/">Home</a>
-          <a href="/">Contact</a>
-          <a href="/">Location</a>
-          <a href="/">About Us</a>
-        </div>
-        <div class="menu-signup">
-          <div>Sign Up</div>
-        </div>
-      </div>
     </div>
     <main>
       <div class="description">
@@ -106,7 +106,7 @@
           than you think
         </p>
         <div class="how-it-works-wrapper">
-          <div class="how-it-works-image"></div>
+          <img src="assets/how-it-works-content.svg" class="how-it-works-image" />
           <div class="how-it-works-content">
             <div class="play-video">
               <div class="background"></div>
@@ -128,8 +128,7 @@
           </div>
         </div>
         <div class="how-it-works-mission-wrapper">
-          <div class="how-it-works-mission-image">
-          </div>
+          <img src="assets/how-it-works-mission-content.svg" class="how-it-works-mission-image" />
           <div class="how-it-works-mission-content">
             <h2>
               Our mission is to <br>
@@ -161,20 +160,20 @@
               Project Livingroom
             </h3>
             <p>
-              A simple guide to create the perfect livingro-
-              om for . Night Watc works beautifully in a wi-
+              A simple guide to create the perfect livingro- <br>
+              om for . Night Watc works beautifully in a wi- <br>
               de gamut of arrangements.
             </p>
-            <div class="project-livingroom-image"></div>
+            <img src="assets/livingroom.svg" class="project-livingroom-image" />
           </div>
           <div class="project-workspace">
-            <div class="project-workspace-image"></div>
+            <img src="assets/workspace.svg" class="project-workspace-image" />
             <h3>
               Project workspace
             </h3>
             <p>
-              A simple guide to create the perfect livingro-
-              om for . Night Watc works beautifully in a wi-
+              A simple guide to create the perfect livingro- <br>
+              om for . Night Watc works beautifully in a wi- <br>
               de gamut of arrangements.
             </p>
           </div>
@@ -183,11 +182,11 @@
               Library
             </h3>
             <p>
-              A simple guide to create the perfect livingro-
-              om for . Night Watc works beautifully in a wi-
+              A simple guide to create the perfect livingro- <br>
+              om for . Night Watc works beautifully in a wi- <br>
               de gamut of arrangements.
             </p>
-            <div class="library-image"></div>
+            <img src="assets/library.svg" class="library-image" />
           </div>
         </div>
       </div>
@@ -202,20 +201,23 @@
           <div class="testimonials-examples-item geulis"></div>
         </div>
         <div class="testimonials-content">
-          <div class="testimonials-content-image"></div>
+          <img src="assets/testimonial-content-image.svg" class="testimonials-content-image" />
           <div class="testimonials-right-content">
             <div class="testimonials-right-content-top-text">
               <p>
                 <span>105</span><br>
-                project done
+                project <br> 
+                done
               </p>
               <p>
                 <span>12</span><br>
-                years of experience
+                years of <br> 
+                experience
               </p>
               <p>
                 <span>10+</span><br>
-                big company partnership
+                big company <br> 
+                partnership
               </p>
             </div>
             <div class="testimonials-right-content-middle-text">
@@ -232,6 +234,22 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="contact">
+        <div class="contact-content">
+          <h1>Contact Us</h1>
+          <p>
+            Have any questions? Want help <br>
+            before getting started?
+          </p>
+          <div class="line left"></div>
+          <div class="line left"></div>
+        </div>
+        <form action="">
+          <input placeholder="Full name" type="text">
+          <input placeholder="Email address" type="text">
+          <button>Send now</button>
+        </form>
       </div>
     </main>
   </div>

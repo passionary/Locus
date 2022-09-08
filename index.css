@@ -22,6 +22,7 @@ main {
 .description-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .description-content {
   flex: 1 1 0;
@@ -189,7 +190,7 @@ aside .signup {
 }
 .how-it-works-wrapper {
   display: flex;
-  height: 350px;
+  flex-wrap: wrap;
   margin-bottom: 150px;
 }
 .how-it-works-wrapper p {
@@ -207,13 +208,14 @@ aside .signup {
 }
 .how-it-works-mission-wrapper {
   display: flex;
-  height: 520px;
+  flex-wrap: wrap;
 }
 .how-it-works-image {
-  background: url(assets/how-it-works-content.svg) no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   border-radius: 10px 0px 0px 10px;
-  flex: 1 1 684px;
+  flex: 2 1 auto;
+  width: 100%;
+  max-width: 850px;
 }
 .how-it-works-content {
   position: relative;
@@ -250,9 +252,8 @@ aside .signup {
   left: 32px;
 }
 .how-it-works-mission-image {
-  background: url(assets/how-it-works-mission-content.svg) no-repeat;
-  background-size: cover;
   flex: 1;
+  width: 100%;
 }
 .how-it-works-mission-content {
   flex: 1 1 0;
@@ -272,7 +273,7 @@ aside .signup {
   background: #fff;
   display: flex;
   flex-direction: column;
-  width: min(80vw, 480px);
+  width: min(120vw, 480px);
   height: 184vh;
   transition: transform 500ms ease 0s;
   transform: translateX(100%);
@@ -337,7 +338,7 @@ aside .signup {
 .our-project {
   padding-top: 120px;
 }
-.our-project h1, p {
+.our-project h1, .our-project p {
   text-align: center;
 }
 .our-project > h1 {
@@ -359,10 +360,13 @@ aside .signup {
 }
 .our-project-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 94px;
 }
 .our-project-content > div {
+  display: flex;
+  flex-direction: column;
+  margin: 94px auto 0 auto;
   max-width: 360px;
 }
 .our-project-content p {
@@ -375,28 +379,19 @@ aside .signup {
   margin-bottom: 5px;
 }
 .project-livingroom-image {
-  border-radius: 0px 0px 180px 180px;
-  width: 360px;
-  height: 360px;
-  background: url(assets/livingroom.svg) no-repeat;
-  background-size: cover;
+  width: 100%;
 }
 .project-workspace-image {
-  width: 360px;
-  height: 360px;
-  border-radius: 180px;
-  background: url(assets/workspace.svg) no-repeat;
-  background-size: cover;
+  width: 100%;
 }
 .project-workspace h3 {
   margin-top: 35px;
 }
 .library-image {
-  width: 360px;
-  height: 360px;
-  border-radius: 0px 0px 180px 180px;
-  background: url(assets/library.svg) no-repeat;
-  background-size: cover;
+  width: 100%;
+}
+.testimonials {
+  padding-top: 213px;
 }
 .testimonials h1 {
   text-align: center;
@@ -407,26 +402,37 @@ aside .signup {
 .testimonials-examples {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+}
+.testimonials-examples > div {
+  margin: 0 auto;
 }
 .testimonials-content {
   padding-top: 62px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .testimonials-content-image {
-  width: 492px;
-  height: 560px;
-  background: url(assets/testimonial-content-image.svg) no-repeat;
-  background-size: cover;
+  max-width: 492px;
+  width: 100%;
+  margin: 0 auto 0 auto;
 }
 .testimonials-right-content {
   padding: 40px 85px 76px 109px;
   background: #CCF0E6;
   flex: 1;
+  max-height: 560px;
+  box-sizing: border-box;
+  min-width: 800px;
+  max-width: 840px;
 }
 .testimonials-right-content-top-text {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-right: 22px;
 }
 .testimonials-right-content-top-text span {
   color: #58A9A5;
@@ -441,7 +447,6 @@ aside .signup {
   font-weight: 600;
 }
 .testimonials-right-content-top-text p + p {
-  margin-left: 93px;
 }
 .testimonials-right-content-middle-text {
   margin-top: 98px;
@@ -498,6 +503,93 @@ aside .signup {
   height: 104px;
   background: url(assets/geulis.svg) no-repeat;
 }
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 240px;
+}
+.contact h1 {
+  font-family: 'ExtraBoldPoppins';
+  font-size: 56px;
+  line-height: 84px;
+  margin: 0;
+}
+.contact p {
+  color: #486958;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 10px 0 38px 0;
+}
+.contact form {
+  border: 1px solid #486958;
+}
+.contact-content {
+  padding: 0 84px 0 0;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 43px 35px 43px;
+}
+input[type="text"] {
+  color: #486958;
+  border-color: #000000;
+  border-width: 0 0 1px 0;
+  padding: 0 0 25px 0;
+  margin-top: 55px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+.line.left {
+  margin: 0 0 15px 0;
+}
+.contact form button {
+  margin: 95px 0 0 auto;
+  font-family: 'BoldPoppins';
+  font-size: 20px;
+  line-height: 30px;
+  border: none;
+  height: 80px;
+  color: #fff;
+  background: #58A9A5;
+  border-radius: 20px 20px 20px 0px;
+  width: 271px;
+}
+
+@media screen and (max-width: 1510px) {
+  .how-it-works-image {
+    max-width: 100%;
+  }
+  .how-it-works-mission-wrapper {
+    flex-direction: column;
+  }
+  .how-it-works-mission-content {
+    padding: 0;
+  }
+  .how-it-works-wrapper {
+    flex-direction: column;
+  }
+  .testimonials-content-image {
+    max-width: 100%;
+  }
+  .testimonials-content {
+    flex-direction: column;
+  }
+  .testimonials-right-content {
+    min-width: 100%;
+    max-height: 100%;
+  }
+  .testimonials-right-content-top-text {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1335px) {
+  .how-it-works-image {
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 1300px) {
   .nav {
     font-size: 18px;
@@ -524,6 +616,19 @@ aside .signup {
     display: block;
   }
 }
+@media screen and (max-width: 967px) {
+  .contact-content {
+    padding: 0 0 50px 0;
+    width: 100%;
+  }
+  .contact h1, .contact p {
+    text-align: center;
+  }
+  .line.left {
+    margin: 0 auto 15px auto;
+  }
+}
+
 
 @font-face {
   font-family: 'Poppins';
